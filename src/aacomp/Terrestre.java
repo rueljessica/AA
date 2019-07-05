@@ -1,5 +1,7 @@
 package aacomp;
 
 public interface Terrestre extends Animal {
-	public void andar();
+	default void andar() {
+		System.out.println("estou andando!");
+	}
 }
