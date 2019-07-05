@@ -1,5 +1,7 @@
 package aacomp;
 
 public interface Aquatico extends Animal {
-	public void nadar();
+	default void nadar() {
+		System.out.println("estou nadando!");
+	}
 }
