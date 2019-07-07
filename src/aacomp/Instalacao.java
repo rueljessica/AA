@@ -1,10 +1,11 @@
 package aacomp;
 
-public abstract class Instalacao {
+public abstract class Instalacao { 
 	private int capacidadeMaxima;
 	private Localizacao localizacao;
 	private double temperatura;
 	private Animal[] animaisInstalados;
+	
 	public Instalacao(int capacidadeMaxima, Localizacao localizacao, double temperatura, Animal[] animaisInstalados) {
 		this.capacidadeMaxima = capacidadeMaxima;
 		this.localizacao = localizacao;
