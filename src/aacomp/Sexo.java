@@ -1,5 +1,5 @@
 package aacomp;
 
 public enum Sexo {
-	MASCULINO, FEMININO
+	MASCULINO, FEMININO // listando tipos de sexo
 }

@@ -2,9 +2,13 @@ package aacomp;
 
 import java.util.ArrayList;
 
-public class Zoologico {
+public class Zoologico {	
 	ArrayList<Localizacao> locaisDisponiveis = new ArrayList<Localizacao>();
+	public Zoologico() {
+		add();
+	}
 	public void add() {
+		//adicionando as regiões ao ArrayList
 		locaisDisponiveis.add(Localizacao.CENTROESTE);
 		locaisDisponiveis.add(Localizacao.LESTE);
 		locaisDisponiveis.add(Localizacao.NORDESTE);
@@ -16,12 +20,13 @@ public class Zoologico {
 		locaisDisponiveis.add(Localizacao.SUDOESTE);
 	}
 	public void criar(Localizacao l, Animal[] animais) {
-		add();
 		boolean aux = false;
 		for(Localizacao a : locaisDisponiveis) {
 			if(a==l) {
-				locaisDisponiveis.remove(a);
+				System.out.println("LOCALIZACAO: "+a);
+				locaisDisponiveis.remove(a); // removendo localização indisponivel
 				aux = true;
+				// fabricando instalações
 				if(animais[0] instanceof Zebra) {
 					FabricaInstalacao.criarInstalacaoZebra(l, animais);
 				}else if(animais[0] instanceof Elefante) {
@@ -53,8 +58,9 @@ public class Zoologico {
 				return;
 			}
 		}
+		// mensagem caso a localização esteja indisponivel
 		if(aux==false) {
-			System.out.println("TENTE COM OUTRA LOCALIZACAO");
+			System.out.println("LOCALIZACAO INDISPONIVEL, TENTE COM OUTRA");
 		}
 	}
 }

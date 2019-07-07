@@ -9,7 +9,6 @@ public class Jaula extends ElementoInstalacao {
 		this.largura = largura;
 		this.comprimento = comprimento;
 	}
-
 	public double area() {
 		return 0;
 	}

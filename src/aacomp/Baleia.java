@@ -1,12 +1,12 @@
 package aacomp;
 
 public class Baleia implements Aquatico{
-	private Porte porte;
-	private Sexo sexo;
-	Alimento alimento = Alimento.PEIXES;
+	private Porte porte; 
+	private Sexo sexo;  
+	Alimento alimento = Alimento.PEIXES; // definindo o tipo de alimento que este animal come
 	@Override
 	public boolean alimentar(Alimento alimento) {
-		// TODO Auto-generated method stub
+		// comparando o tipo de alimento recebido com o tipo que o animal come 
 		if(this.alimento == alimento) {
 			return true;
 		}
@@ -14,25 +14,18 @@ public class Baleia implements Aquatico{
 	}
 	@Override
 	public Sexo getSexo() {
-		// TODO Auto-generated method stub
 		return this.sexo;
 	}
-
 	@Override
 	public void setSexo(Sexo sexo) {
-		// TODO Auto-generated method stub
 		this.sexo = sexo;
 	}
-
 	@Override
 	public Porte getPorte() {
-		// TODO Auto-generated method stub
 		return this.porte;
 	}
-
 	@Override
 	public void setPorte(Porte porte) {
-		// TODO Auto-generated method stub
 		this.porte = porte;
 	}
 }
