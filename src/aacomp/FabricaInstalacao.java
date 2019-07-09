@@ -4,7 +4,8 @@ public class FabricaInstalacao {
 	/* em cada método p/ criar a instalaçao de cada animal foi feito: 
 		a contagem dos animais no vetor e foi comparado com a capacidade maxima da instalação 
 		quando ultrapassa o limite, é apresentada uma mensagem 
-		quando a quantidade de animais é menor ou igual ao limite, é criada a instalação
+		quando a quantidade de animais é menor ou igual ao limite, é criada a instalação 
+		para as jaulas, é imprimido a area total da jaula criada
 		e se for menor que o limite, é apresentada uma mensagem falando quantos animais ainda podem ser adicionados à instalação
 	*/
 	@SuppressWarnings("unused")
