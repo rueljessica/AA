@@ -9,7 +9,8 @@ public class Jaula extends ElementoInstalacao {
 		this.comprimento = comprimento;
 	}
 	public double area() {
-		return 0;
+		double area = 2 *((this.altura * this.comprimento ) + (this.altura * this.largura)+(this.comprimento + this.largura));
+		return area;
 	}
 	public double getAltura() {
 		return altura;
