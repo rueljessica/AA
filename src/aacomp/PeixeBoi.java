@@ -4,6 +4,7 @@ public class PeixeBoi implements Aquatico {
 	private Porte porte;
 	private Sexo sexo;
 	Alimento alimento = Alimento.PEIXES;  // definindo o tipo de alimento que este animal come
+	
 	@Override
 	public boolean alimentar(Alimento alimento) {
 		// comparando o tipo de alimento recebido com o tipo que o animal come 
@@ -12,18 +13,22 @@ public class PeixeBoi implements Aquatico {
 		}
 		return false;
 	}
+	
 	@Override
 	public Sexo getSexo() {
 		return this.sexo;
 	}
+	
 	@Override
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
 	}
+	
 	@Override
 	public Porte getPorte() {
 		return this.porte;
 	}
+	
 	@Override
 	public void setPorte(Porte porte) {
 		this.porte = porte;
