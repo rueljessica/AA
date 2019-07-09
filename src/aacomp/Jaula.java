@@ -9,6 +9,7 @@ public class Jaula extends ElementoInstalacao {
 		this.comprimento = comprimento;
 	}
 	public double area() {
+		//calculando area da jaula
 		double area = 2 *((this.altura * this.comprimento ) + (this.altura * this.largura)+(this.comprimento + this.largura));
 		return area;
 	}
