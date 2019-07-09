@@ -2,8 +2,7 @@ package aacomp;
 
 public class Jaula extends ElementoInstalacao {
 	private double altura, largura, comprimento;
-	public Jaula(int capacidadeMaxima, Localizacao localizacao, double temperatura, Animal[] animaisInstalados,
-			double altura, double largura, double comprimento) {
+	public Jaula(int capacidadeMaxima, Localizacao localizacao, double temperatura, Animal[] animaisInstalados, double altura, double largura, double comprimento) {
 		super(capacidadeMaxima, localizacao, temperatura, animaisInstalados);
 		this.altura = altura;
 		this.largura = largura;
