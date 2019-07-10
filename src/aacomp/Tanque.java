@@ -6,6 +6,9 @@ public class Tanque extends ElementoInstalacao {
 		super(capacidadeMaxima, localizacao, temperatura, animaisInstalados);
 		this.volumeEmLitros = volumeEmLitros;
 	}
+	public Tanque() {
+		super();
+	}
 	public double getVolumeEmLitros() {
 		return volumeEmLitros;
 	}
