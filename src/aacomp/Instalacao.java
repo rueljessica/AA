@@ -5,7 +5,7 @@ public abstract class Instalacao {
 	private int capacidadeMaxima;
 	private Localizacao localizacao;
 	private double temperatura;
-	private Animal[] animaisInstalados;
+	private Animal[] animaisInstalados = new Animal[50];
 	//construtor
 	public Instalacao(int capacidadeMaxima, Localizacao localizacao, double temperatura, Animal[] animaisInstalados) {
 		this.capacidadeMaxima = capacidadeMaxima;
@@ -13,8 +13,16 @@ public abstract class Instalacao {
 		this.temperatura = temperatura;
 		this.animaisInstalados = animaisInstalados;
 	}
-	public boolean instalaAnimal(Animal animal) {
-		return true;
+	public Instalacao() {
+		super();
+	}
+	public boolean instalaAnimal(Animal animal, int i) {
+		if(i<this.capacidadeMaxima) {
+			this.animaisInstalados[i] = animal;
+			return true;
+			
+		}
+		return false;
 	}
 	public int getCapacidadeMaxima() {
 		return capacidadeMaxima;
